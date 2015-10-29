@@ -57,12 +57,18 @@
 .bottom-nav {
   height: 92px;
   font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
   text-align: center;
   line-height: 92px;
 }
 
+header, section {
+  padding-left: 20px;
+}
+
 h1, th {
   font-family: "Courier New", Courier, monospace;
+  padding-bottom: 20px;
 }
 
 p {
@@ -78,7 +84,16 @@ p {
    font-size: 30px;
  }
 
- table#kitty img {
+ table img {
    width: 100%;
    padding: 5px;
+ }
+
+ #projects {
+   display: inline-block;
+   width: 50%;
+   float: left;
+ }
+
+ marqee {
  }
