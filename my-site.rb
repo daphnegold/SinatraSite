@@ -2,11 +2,11 @@ require "sinatra"
 
 class MySite < Sinatra::Base
   get "/" do
-    erb :index
+    erb :index, :layout => false
   end
 
   get "/index" do
-    erb :index
+    erb :index, :layout => false
   end
 
   get "/about" do
