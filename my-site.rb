@@ -5,19 +5,19 @@ class MySite < Sinatra::Base
     erb :index
   end
 
-  get "/index.html" do
+  get "/index" do
     erb :index
   end
 
-  get "/about.html" do
+  get "/about" do
     erb :about
   end
 
-  get "/blog.html" do
+  get "/blog" do
     erb :blog
   end
 
-  get "/projects.html" do
+  get "/projects" do
     erb :projects
   end
 end

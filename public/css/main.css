@@ -37,16 +37,22 @@
    font-size: 38px;
    font-family: "Courier New", Courier, monospace;
    padding: 200px 100px;
+   text-align: center;
+ }
+
+ nav a {
+   padding: 30px;
+   text-decoration: none;
  }
 
 #home-nav {
    margin-top: -100px;
    background-color: white;
-   height: 50px;
+   height: 60px;
+   font-family: Verdana, Geneva, sans-serif;
    text-align: center;
-   font-family: "Courier New", Courier, monospace;
    font-size: 25px;
-   line-height: 50px;
+   line-height: 60px;
  }
 
 .social-media-links {
@@ -54,26 +60,34 @@
    text-align: center;
 }
 
-.bottom-nav {
-  height: 92px;
-  font-family: "Courier New", Courier, monospace;
+.top-nav {
+  height: 40px;
+  font-family: Verdana, Geneva, sans-serif;
   font-size: 20px;
-  text-align: center;
-  line-height: 92px;
+  line-height: 40px;
 }
 
-header, section {
-  padding-left: 20px;
+.top-nav, .page-title {
+  text-align:center;
+}
+
+.page-title {
+  padding-top: 40px;
 }
 
 h1, th {
-  font-family: "Courier New", Courier, monospace;
+  font-family: Verdana, Geneva, sans-serif;
   padding-bottom: 20px;
+  text-align: left;
 }
 
 p {
-  font-size: 16px;
-  font-family: Courier, monospace;
+  padding: 20px;
+}
+
+p, td {
+  font-size: 14px;
+  font-family: Verdana, Geneva, sans-serif;
 }
 
  table {
@@ -95,5 +109,11 @@ p {
    float: left;
  }
 
- marqee {
- }
+ hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid;
+  border-color: #747070;
+  margin: 1em 0
+}
