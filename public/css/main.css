@@ -20,38 +20,51 @@
  * file. The "public" part of the path should *not* be included.
  */
 
-.wrapper {
+/*@font-face {
+  font-family: 'Josefin Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Josefin Slab'), local('JosefinSlab'), url(https://fonts.gstatic.com/s/josefinslab/v6/46aYWdgz-1oFX11flmyEfRampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}*/
+
+body {
    max-width: 960px;
-   margin: 0 auto;
+   margin: auto;
+   min-height: 100%;
  }
 
- #home-style {
+ .home-style {
    background-image: url("/milky-way.jpg");
    background-size: cover;
+   background-attachment: fixed;
    border-radius: 0 200px 0;
    height: 90%;
  }
 
- #home-title {
-   color: #fff;
-   font-size: 38px;
-   font-family: "Courier New", Courier, monospace;
+ .home-title {
+   color: #FFBBDD;
+   font-size: 45px;
+   font-family: "Josefin Slab", serif;
+   font-weight: bold;
    padding: 200px 100px;
    text-align: center;
  }
 
  nav a {
+   font-family: "Josefin Slab", serif;
    padding: 30px;
    text-decoration: none;
+   color: HEX: #660066;
  }
 
-#home-nav {
+.home-nav {
    margin-top: -100px;
    background-color: white;
    height: 60px;
    font-family: Verdana, Geneva, sans-serif;
    text-align: center;
-   font-size: 25px;
+   font-size: 30px;
    line-height: 60px;
  }
 
@@ -60,33 +73,34 @@
    text-align: center;
 }
 
-.top-nav {
-  height: 40px;
-  font-family: Verdana, Geneva, sans-serif;
-  font-size: 20px;
-  line-height: 40px;
+header {
+  position: fixed;
+  background-color: white;
+  width: 960px;
+  z-index: 1;
 }
 
-.top-nav, .page-title {
+.top-nav {
+  height: 50px;
+  font-size: 30px;
+  line-height: 50px;
   text-align:center;
 }
 
-.page-title {
-  padding-top: 20px;
+.spacer {
+  height: 100px;
 }
 
-h1, th {
+h1 {
   font-family: Verdana, Geneva, sans-serif;
+  font-weight: lighter;
   padding-bottom: 20px;
   text-align: left;
 }
 
 p {
   padding: 20px;
-}
-
-p, td {
-  font-size: 14px;
+  font-size: 16px;
   font-family: Verdana, Geneva, sans-serif;
 }
 
@@ -94,16 +108,16 @@ p, td {
    margin: 0 auto;
  }
 
- thead {
-   font-size: 30px;
- }
-
  table img {
-   width: 100%;
-   padding: 5px;
+   object-fit: none; /* Do not scale the image */
+   object-position: center; /* Center the image within the element */
+   height: 350px;
+   width: 310px;
+   border: 1px solid black;
+   background-color: white;
  }
 
- #projects {
+ .projects {
    display: inline-block;
    width: 50%;
    float: left;
@@ -116,4 +130,17 @@ p, td {
   border-top: 1px solid;
   border-color: #747070;
   margin: 1em 0
+}
+
+.twirl {
+  display: inline-block;
+  padding: 10px;
+  transition: all .2s ease-in-out;
+}
+.twirl:hover {
+  transform: rotate(360deg);
+}
+
+.bolded {
+  font-weight: bolder;
 }

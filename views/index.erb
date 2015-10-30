@@ -1,5 +1,6 @@
 <html>
   <head>
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Slab:400,100,100italic,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
     <link href="css/main.css" rel="stylesheet">
     <link rel="shortcut icon" href="/duck-icon.png">
 
@@ -8,10 +9,10 @@
     <meta charset="UTF-8">
   </head>
 
-  <body class="wrapper">
-    <div id="home-style">
-      <h1 id="home-title">The Adventures of Darkwing Daphne</h1>
-      <nav id="home-nav">
+  <body>
+    <div class="home-style">
+      <h1 class="home-title">The Adventures of Darkwing Daphne</h1>
+      <nav class="home-nav">
         <a href="./about">ABOUT</a> |
         <a href="./blog">BLOG</a> |
         <a href="./projects">PROJECTS</a>
@@ -20,10 +21,11 @@
 
     <footer>
       <div class="social-media-links">
-        <a href="https://www.facebook.com/daphne.gold"><img alt="follow me on facebook" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_facebook-48.png" border=0></a>
-        <a href="https://twitter.com/darkwingdaphne"><img alt="follow me on twitter" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_tumblr-48.png" border=0></a>
-        <a href="https://instagram.com/darkwingdaphne/"><img alt="follow me on instagram" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/instagram_online_social_media_photo-48.png" border=0></a>
+        <a class="twirl" href="https://www.facebook.com/daphne.gold"><img alt="follow me on facebook" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_facebook-48.png" border=0></a>
+        <a class="twirl" href="https://twitter.com/darkwingdaphne"><img alt="follow me on twitter" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_tumblr-48.png" border=0></a>
+        <a class="twirl" href="https://instagram.com/darkwingdaphne/"><img alt="follow me on instagram" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/instagram_online_social_media_photo-48.png" border=0></a>
       </div>
+      <p class="copyright">&copy; <%= Time.now.year %> Daphne Gold, Inc. All rights reserved.</p>
     </footer>
   </body>
 </html>
