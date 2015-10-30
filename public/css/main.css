@@ -75,7 +75,7 @@ body {
 
 header {
   position: fixed;
-  background-color: white;
+  background-color: rgba(255 ,255 , 255, 0.9);
   width: 960px;
   z-index: 1;
 }
@@ -99,13 +99,14 @@ h1 {
 }
 
 p {
-  padding: 20px;
+  padding: 10px 20px 10px 20px;
   font-size: 16px;
   font-family: Verdana, Geneva, sans-serif;
 }
 
  table {
    margin: 0 auto;
+   padding: 35px 0 35px 0;
  }
 
  table img {
