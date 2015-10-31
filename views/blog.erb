@@ -1,6 +1,6 @@
 <article>
   <table>
-    <% @bloggin.each do |blog| %>
+    <% @bloggin.reverse.each do |blog| %>
       <% if blog[:num].odd? %>
         <tr>
           <td class="blog">
