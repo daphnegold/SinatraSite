@@ -51,26 +51,39 @@ body {
    text-align: center;
  }
 
+ .highlights, .copyright {
+   text-align: center;
+ }
+
+ h2.highlights {
+   border: 1px solid #747070;
+   border-radius: 100px;
+ }
+
  nav a {
    font-family: "Josefin Slab", serif;
    padding: 30px;
    text-decoration: none;
-   color: HEX: #660066;
+   color: #660066;
  }
 
 .home-nav {
    margin-top: -100px;
    background-color: white;
    height: 60px;
-   font-family: Verdana, Geneva, sans-serif;
    text-align: center;
    font-size: 30px;
    line-height: 60px;
  }
 
-.social-media-links {
-   padding: 20px;
+.social-media-links, .home-social-media-links {
+   padding: 10px;
    text-align: center;
+}
+
+.home-social-media-links a:hover {
+  border-radius: 100%;
+  background-color: #FFBBDD;
 }
 
 header {
@@ -92,16 +105,28 @@ header {
 }
 
 h1 {
-  font-family: Verdana, Geneva, sans-serif;
-  font-weight: lighter;
+  font-family: "Josefin Slab", serif;
   padding-bottom: 20px;
-  text-align: left;
+  padding: 10px;
+  font-size: 30px;
+}
+
+h2 {
+  font-family: "Josefin Slab", serif;
+  padding-bottom: 20px;
+  padding: 10px;
+  font-size: 25px;
 }
 
 p {
-  padding: 10px 20px 10px 20px;
+  padding: 10px;
   font-size: 16px;
   font-family: Verdana, Geneva, sans-serif;
+}
+
+.go-home {
+  margin-left: 20px;
+  text-align: right;
 }
 
  table {
@@ -109,7 +134,7 @@ p {
    padding: 35px 0 35px 0;
  }
 
- table img {
+ .kitty-photo {
    object-fit: none; /* Do not scale the image */
    object-position: center; /* Center the image within the element */
    height: 350px;
@@ -118,10 +143,39 @@ p {
    background-color: white;
  }
 
- .projects {
+ .blog {
+   width: 450px;
+   height: 375px;
+}
+
+.blog-photo {
+  object-fit: none; /* Do not scale the image */
+  object-position: center; /* Center the image within the element */
+  width: 450px;
+  height: 375px
+}
+
+.blog-title {
+  font-style: italic;
+}
+
+table tr:nth-child(2n) {
+  text-align: right;
+  clear: left;
+}
+
+ .projects, .home-projects {
+   font-family: Verdana, Geneva, sans-serif;
    display: inline-block;
-   width: 50%;
-   float: left;
+ }
+
+ .projects li {
+   padding: 10px 0 20px;
+ }
+
+ .home-projects {
+   display: block;
+   text-align: center;
  }
 
  hr {

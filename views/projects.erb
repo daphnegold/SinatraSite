@@ -1,13 +1,25 @@
 <section class="projects">
-  <p>
-    <a href="https://github.com/daphnegold/FarMar/tree/darg/master">Finding the Elusive Tired Honey</a>
-  </p>
-  <p>
-    <a href="https://gist.github.com/daphnegold/b6bd5dd8647e457aa195">Investigative report: Where is Cookie Monster Now?</a>
-  </p>
-  <p>
-    <a href="https://github.com/Ada-C4/Word-Guess/tree/darg_jmn/master">Monsieur le Mouse and the War of Many Cheeses </a>
-  </p>
+
+  <ul>
+    <h2>CURRENT PROJECTS</h2>
+    <% @current_projects.each do |project| %>
+      <li><a href="<%= project[:link] %>"><%= project[:title] %></li></a>
+      <% unless project[:collab].nil? %>
+        Joint work with <%= project[:collab] %>
+      <% end %>
+    <% end %>
+  </ul>
+
+
+  <ul>
+    <h2>COMPLETED PROJECTS</h2>
+    <% @completed_projects.each do |project| %>
+      <li><a href="<%= project[:link] %>"><%= project[:title] %></li></a>
+      <% unless project[:collab].nil? %>
+        Joint work with <%= project[:collab] %>
+      <% end %>
+    <% end %>
+  </ul>
 </section>
 
-<marquee direction=down behavior=alternate height=500px width=450px><img src="http://25.media.tumblr.com/05bdbdc72871fe5eb73b75a982af7182/tumblr_mvphywSOM01qjomw7o1_400.gif"/></marquee>
+<marquee direction=up behavior=alternate height=450px width=350px><img src="http://25.media.tumblr.com/05bdbdc72871fe5eb73b75a982af7182/tumblr_mvphywSOM01qjomw7o1_400.gif"/></marquee>
