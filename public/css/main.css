@@ -161,7 +161,6 @@ p {
 
 table tr:nth-child(2n) {
   text-align: right;
-  clear: left;
 }
 
  .projects, .home-projects {
@@ -171,6 +170,12 @@ table tr:nth-child(2n) {
 
  .projects li {
    padding: 10px 0 20px;
+ }
+
+ img.ada {
+   width: 35%;
+   display: block;
+   margin: auto;
  }
 
  .home-projects {
